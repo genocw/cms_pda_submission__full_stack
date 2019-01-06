@@ -1,5 +1,3 @@
-// use react router to switch between containers, like in full stack pirates example
-
 import React, { Component, Fragment } from 'react';
 import ModuleListContainer from './containers/ModuleListContainer.js';
 import SingleModuleContainer from './containers/SingleModuleContainer.js';
@@ -17,16 +15,14 @@ class App extends Component {
         <Fragment>
           <Switch>
 
+          <Route exact path = '/' component={ModuleListContainer}/>
           <Route exact path = '/api/modules' component={ModuleListContainer}/>
           <Route exact path = '/api/modules/detailed' component={ModuleListPrintContainer}/>
-    
-
           <Route exact path="/api/modules/:id" render = {(props) => {
             const id = props.match.params.id;
             return <SingleModuleContainer id={id} />
           }}
           />
-
           <Route exact path="/api/modules/edit/:id" render = {(props) => {
             const id = props.match.params.id;
             return <ModuleEditFormContainer id={id} />
