@@ -1,27 +1,28 @@
 # A Content Management System for PDA submissions
-Group Project to practice using JavaScript/ Java to make a web based Professional Development Award (PDA) Submission application app.
+Full-stack application to handle Professional Development Award (PDA) evidence submission, built using Java Spring back-end, React front-end and external libraries.
 
 ## How To Run The Code
 
 To run this application, you will need to first start the Spring back-end application.
-1. Install dependencies in the pom.xml file
+1. Install dependencies listed in the pom.xml file
 2. Find and run the following file: src/main/java/com/example/PDATool/PdaToolApplication
-You will first need to run the following commands in Terminal:
+Now in the front-end, run the following commands in Terminal:
 3. npm install (to install dependencies)
 4. npm run start (to run the node server)
+5. Finally direct your browser to http://localhost:3000/api/modules
 
-Next direct your browser to http://localhost:3000/api/modules
+- Note: The uploading of images requires a Cloudinary account and key. Add your key to the src/components/ImageDrop.js file for full functionality. (Not essential for viewing the app)
 
 ## THE BRIEF
 
-The project brief developed from an idea.
+The project brief developed from a frustration and an idea.
 
 Every CodeClan student working toward the SQA Personal Development Award is required to submit text and image evidence throughout the training. The current system involves composing a lengthy Pages document, accumulating this evidence. The idea was to develop a full-stack application which would improve upon this process.
 
 Limitations of the current system:
 1. Reviewing and editing an increasingly lengthy document across many months is laborious and inefficient.
 2. The only way to identify which sections are incomplete, in progress or complete is to scan the entire document.
-3. No way to submit sections at a time.
+3. No way to submit sections at a time, leaving past work susceptible to accidental editing/deletion.
 4. Feedback on student progress requires an in person review of the document with support staff.
 
 These limitations and information gathered from users led to the project outline, as follows:
