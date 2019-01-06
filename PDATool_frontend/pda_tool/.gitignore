@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/src/helpers/key.js
+src/helpers/keys.js
+src/helpers/key.js
